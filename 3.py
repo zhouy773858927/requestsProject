@@ -7,7 +7,7 @@ class Rectangle:
         if name == 'size':
             self.hight,self.width = value
         else:
-            self.__dict__[name] = value
+            self.__dict__[name] = value#为了避免_setattr_被再次调用
     def __getattr__(self, name):
         if name == 'size':
             return self.hight,self.width

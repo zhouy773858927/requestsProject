@@ -12,7 +12,7 @@ class TestIterator:
     vaule = 0
     def __next__(self):
         self.vaule += 1
-        if self.vaule > 10: raise StopIteration
+        if self.vaule > 10: raise StopIteration #如果value大于10 ，则迭代器中没有更多数值
         return self.vaule
     def __iter__(self):
         return self

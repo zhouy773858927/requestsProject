@@ -15,3 +15,7 @@ if __name__ == '__main__':
             print(f)
             break
 
+
+it = iter([1,2,3,4,5])
+print(it.__next__())
+print(it.__next__())

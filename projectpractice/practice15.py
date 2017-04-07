@@ -15,13 +15,13 @@ def reduceNum(n):
     while n not in [1]:
         for index in range(2,n + 1):
             if n % index == 0:
-                n /= index#n 等于 n/index
+                n //= index#n 等于 n/index
                 if n == 1 :
                     print(index)
                 else:#index一定是素数
                     print( '{}*'.format(index)),
                 break
 
-print(reduceNum(10))
+print(reduceNum(90))
 print(reduceNum(100))
 

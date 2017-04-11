@@ -49,7 +49,7 @@ while True:
                     print(er_2)
                 elif length >  6:
                     with open('mingzi.txt','a')as r_3:
-                        w_1 = '%s:%s:0\n'%(useradd,password)
+                        w_1 = '%s:%s:0\n\n'%(useradd,password)
                         r_3.write(w_1)
                         s_1 = success_1.center(30,'-')
                         print(s_1)
@@ -73,7 +73,7 @@ while True:
 
             u = open('mingzi.txt','r')
             for uline in u.readlines():
-                user,password,mony = uline.strip().split(":")
+                (user,password,mony) = uline.strip().split(":")
 
                 if username == user:
                     i = 0

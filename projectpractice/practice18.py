@@ -100,7 +100,7 @@ while True:
             while True:
                 print('1.购物 2.查看购物车 3.查询余额 4.充值 b.返回登陆 q.退出')
                 print('------------------------------------------------------------')
-                choice_2 = print("输入序号：")
+                choice_2 = input("输入序号：")
                 flag_1 = False
                 while True:
                     if choice_2 == '1':
@@ -231,8 +231,8 @@ while True:
                         print(er_4)
                         break
                     break
-            if flag ==True:
-                break
+                if flag ==True:
+                    break
             break
     elif sr_1 == 'q':
         exit(ex_1)
